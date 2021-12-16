@@ -390,14 +390,10 @@ p3
 lay <- rbind(c(1,2,NA),
              c(1,3,NA),
              c(4,4,NA))
-fig1<-grid.arrange(p, p1, p2, p3,
-             #grobs = ,
+pdf("Fig1.pdf", width = 9, height = 9)
+grid.arrange(p, p1, p2, p3,
              layout_matrix = lay,
              widths = c(1.5, 2)
-)
-fig1
-pdf("Fig1.pdf", width = 9, height = 9)
-print(fig1)
 dev.off()
 
 
